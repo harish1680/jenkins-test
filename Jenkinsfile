@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Pull Code') {
             steps {
-                git  'https://github.com/harish1680/jenkins-test.git'
+                git branch: 'main', url: 'https://github.com/harish1680/jenkins-test.git'
             }
         }
         stage('Run Script') {
